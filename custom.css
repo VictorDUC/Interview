@@ -1,0 +1,61 @@
+#TOC {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* Force l'affichage de tous les éléments de la TOC */
+#TOC ul {
+    display: block !important;
+    /* padding-left: 20px;
+    border-left: none !important; */
+}
+
+#TOC > ul > li > a {
+    font-weight: bold;  /* Met en gras uniquement les sections principales */
+}
+
+#TOC a[href="#references"] {
+    font-weight: bold;  /* Met en gras la section "References" */
+}
+
+
+/* Supprime les flèches d'expansion/réduction */
+/* #TOC .toc-toggle {
+    display: none;
+} */
+
+body {
+    /* Réduit l'espace à gauche du contenu principal */
+    padding-left: 120px;  /* Un peu plus que la largeur du TOC pour garder un petit espace */
+    max-width: none !important; /* Supprime la largeur maximale par défaut */
+    margin-right: 0.5em !important; /* Ajoute une marge à droite */
+}
+
+/* #TOC a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+} */
+
+/* #TOC a:hover {
+    color: #007bff;
+} */
+
+/* Cache les numéros de section */
+/* .toc-section-number {
+    display: none;
+} */
+
+/* Cache le titre "Table of contents" du TOC */
+/* #TOC > h2:first-child {
+    display: none;
+} */
